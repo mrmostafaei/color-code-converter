@@ -1,0 +1,44 @@
+{
+    "name": "miladtech/color-code-converter",
+    "description": "HEX code coverted to RGB color code",
+    "type": "library",
+    "authors": [
+        {
+            "name": "MiladTech",
+            "email": "info@milad-tech.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MiladTech\\ColorCodeConverter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MiladTech\\ColorCodeConverter\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "extras": {
+        "laravel": {
+            "provders": [
+                "MiladTech\\ColorCodeConverter\\Providers\\ColorCodeConverterProvider"
+            ]
+        }
+
+    },
+    "minimum-stability": "dev"
+}
